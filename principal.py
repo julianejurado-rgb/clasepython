@@ -1,9 +1,9 @@
-from formulario import Formulario 
+from Formulario import Formulario
 
-# Zona de codigo principal
+form = Formulario()
 
-obj_formulario = Formulario()
+ventana = form.iniciar_ventana()
 
-obj_formulario.iniciar_ventana()
-obj_formulario.iniciar_preguntas()
-obj_formulario.formulario.mainloop()
+form.iniciar_preguntas()
+
+ventana.mainloop()
